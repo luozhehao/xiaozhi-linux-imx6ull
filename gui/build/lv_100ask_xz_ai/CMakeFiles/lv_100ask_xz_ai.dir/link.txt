@@ -1,0 +1,2 @@
+/usr/local/arm/gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-ar qc liblv_100ask_xz_ai.a CMakeFiles/lv_100ask_xz_ai.dir/src/cJSON.c.o CMakeFiles/lv_100ask_xz_ai.dir/src/ipc_udp.c.o CMakeFiles/lv_100ask_xz_ai.dir/src/lv_100ask_xz_ai_main.c.o CMakeFiles/lv_100ask_xz_ai.dir/src/ui_system.c.o
+/usr/local/arm/gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-ranlib liblv_100ask_xz_ai.a

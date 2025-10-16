@@ -1,0 +1,29 @@
+lvgl/CMakeFiles/lvgl.dir/src/osal/lv_pthread.c.o: \
+ /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/gui/lvgl/src/osal/lv_pthread.c \
+ /usr/local/arm/gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/stdc-predef.h \
+ /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/gui/lvgl/src/osal/lv_os.h \
+ /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/gui/lvgl/src/osal/../lv_conf_internal.h \
+ /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/gui/lvgl/src/osal/../lv_conf_kconfig.h \
+ /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/gui/lv_conf.h \
+ /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/gui/lvgl/src/osal/../misc/lv_types.h \
+ /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/gui/lvgl/src/osal/../misc/../lv_conf_internal.h \
+ /usr/local/arm/gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/6.2.1/include/stdint.h \
+ /usr/local/arm/gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/stdint.h \
+ /usr/local/arm/gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/features.h \
+ /usr/local/arm/gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/sys/cdefs.h \
+ /usr/local/arm/gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/wordsize.h \
+ /usr/local/arm/gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/gnu/stubs.h \
+ /usr/local/arm/gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/gnu/stubs-hard.h \
+ /usr/local/arm/gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/wchar.h \
+ /usr/local/arm/gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/6.2.1/include/stddef.h \
+ /usr/local/arm/gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/6.2.1/include/stdbool.h \
+ /usr/local/arm/gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/inttypes.h \
+ /usr/local/arm/gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/6.2.1/include-fixed/limits.h \
+ /usr/local/arm/gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/6.2.1/include-fixed/syslimits.h \
+ /usr/local/arm/gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/limits.h \
+ /usr/local/arm/gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/posix1_lim.h \
+ /usr/local/arm/gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/local_lim.h \
+ /usr/local/arm/gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/linux/limits.h \
+ /usr/local/arm/gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/posix2_lim.h \
+ /usr/local/arm/gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/6.2.1/include/stdarg.h \
+ /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/gui/lvgl/src/osal/lv_os_none.h

@@ -1,0 +1,19 @@
+lvgl/CMakeFiles/lvgl.dir/src/libs/tjpgd/tjpgd.c.o: \
+ /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/gui/lvgl/src/libs/tjpgd/tjpgd.c \
+ /usr/local/arm/gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/stdc-predef.h \
+ /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/gui/lvgl/src/libs/tjpgd/tjpgd.h \
+ /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/gui/lvgl/src/libs/tjpgd/../../lv_conf_internal.h \
+ /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/gui/lvgl/src/libs/tjpgd/../../lv_conf_kconfig.h \
+ /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/gui/lv_conf.h \
+ /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/gui/lvgl/src/libs/tjpgd/tjpgdcnf.h \
+ /usr/local/arm/gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/string.h \
+ /usr/local/arm/gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/features.h \
+ /usr/local/arm/gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/sys/cdefs.h \
+ /usr/local/arm/gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/wordsize.h \
+ /usr/local/arm/gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/gnu/stubs.h \
+ /usr/local/arm/gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/gnu/stubs-hard.h \
+ /usr/local/arm/gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/6.2.1/include/stddef.h \
+ /usr/local/arm/gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/xlocale.h \
+ /usr/local/arm/gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/6.2.1/include/stdint.h \
+ /usr/local/arm/gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/stdint.h \
+ /usr/local/arm/gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/wchar.h
