@@ -1,5 +1,5 @@
 src/CMakeFiles/control_process.dir/http.cpp.o: \
- /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/src/http.cpp \
+ /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/src/http.cpp \
  /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/stdc-predef.h \
  /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/include/c++/7.5.0/iostream \
  /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/include/c++/7.5.0/arm-linux-gnueabihf/bits/c++config.h \
@@ -177,7 +177,7 @@ src/CMakeFiles/control_process.dir/http.cpp.o: \
  /home/lozoho/arm_libs/curl_install/include/curl/curl.h \
  /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/include/c++/7.5.0/sstream \
  /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/include/c++/7.5.0/bits/sstream.tcc \
- /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/src/json.hpp \
+ /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/src/json.hpp \
  /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/include/c++/7.5.0/algorithm \
  /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/include/c++/7.5.0/utility \
  /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/include/c++/7.5.0/bits/stl_relops.h \
@@ -270,4 +270,4 @@ src/CMakeFiles/control_process.dir/http.cpp.o: \
  /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/include/c++/7.5.0/bits/allocator.h \
  /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/include/c++/7.5.0/bits/codecvt.h \
  /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/include/c++/7.5.0/bits/unique_ptr.h \
- /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/src/http.h
+ /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/src/http.h

@@ -1,7 +1,8 @@
+#if 0
+
 // #ifndef ESP32_MUSIC_H
 // #define ESP32_MUSIC_H
 
-#if 0
 
 #include <string>
 #include <thread>
@@ -110,4 +111,6 @@ public:
     DisplayMode GetDisplayMode() const { return display_mode_.load(); }
 };
 
-#endif // ESP32_MUSIC_H
+// #endif // ESP32_MUSIC_H
+
+#endif

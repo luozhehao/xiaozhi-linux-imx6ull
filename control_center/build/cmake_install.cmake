@@ -1,4 +1,4 @@
-# Install script for directory: /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center
+# Install script for directory: /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/src/cmake_install.cmake")
+  include("/home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/src/cmake_install.cmake")
 
 endif()
 
@@ -56,5 +56,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

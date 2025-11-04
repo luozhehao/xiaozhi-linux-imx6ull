@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center
+CMAKE_SOURCE_DIR = /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build
+CMAKE_BINARY_DIR = /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/control_process.dir/depend.make
@@ -72,114 +72,114 @@ include src/CMakeFiles/control_process.dir/flags.make
 src/CMakeFiles/control_process.dir/media/esp32_music.cc.o: src/CMakeFiles/control_process.dir/flags.make
 src/CMakeFiles/control_process.dir/media/esp32_music.cc.o: ../src/media/esp32_music.cc
 src/CMakeFiles/control_process.dir/media/esp32_music.cc.o: src/CMakeFiles/control_process.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/control_process.dir/media/esp32_music.cc.o"
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/control_process.dir/media/esp32_music.cc.o -MF CMakeFiles/control_process.dir/media/esp32_music.cc.o.d -o CMakeFiles/control_process.dir/media/esp32_music.cc.o -c /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/src/media/esp32_music.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/control_process.dir/media/esp32_music.cc.o"
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/control_process.dir/media/esp32_music.cc.o -MF CMakeFiles/control_process.dir/media/esp32_music.cc.o.d -o CMakeFiles/control_process.dir/media/esp32_music.cc.o -c /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/src/media/esp32_music.cc
 
 src/CMakeFiles/control_process.dir/media/esp32_music.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/control_process.dir/media/esp32_music.cc.i"
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/src/media/esp32_music.cc > CMakeFiles/control_process.dir/media/esp32_music.cc.i
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/src/media/esp32_music.cc > CMakeFiles/control_process.dir/media/esp32_music.cc.i
 
 src/CMakeFiles/control_process.dir/media/esp32_music.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/control_process.dir/media/esp32_music.cc.s"
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/src/media/esp32_music.cc -o CMakeFiles/control_process.dir/media/esp32_music.cc.s
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/src/media/esp32_music.cc -o CMakeFiles/control_process.dir/media/esp32_music.cc.s
 
 src/CMakeFiles/control_process.dir/board.cc.o: src/CMakeFiles/control_process.dir/flags.make
 src/CMakeFiles/control_process.dir/board.cc.o: ../src/board.cc
 src/CMakeFiles/control_process.dir/board.cc.o: src/CMakeFiles/control_process.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/control_process.dir/board.cc.o"
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/control_process.dir/board.cc.o -MF CMakeFiles/control_process.dir/board.cc.o.d -o CMakeFiles/control_process.dir/board.cc.o -c /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/src/board.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/control_process.dir/board.cc.o"
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/control_process.dir/board.cc.o -MF CMakeFiles/control_process.dir/board.cc.o.d -o CMakeFiles/control_process.dir/board.cc.o -c /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/src/board.cc
 
 src/CMakeFiles/control_process.dir/board.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/control_process.dir/board.cc.i"
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/src/board.cc > CMakeFiles/control_process.dir/board.cc.i
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/src/board.cc > CMakeFiles/control_process.dir/board.cc.i
 
 src/CMakeFiles/control_process.dir/board.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/control_process.dir/board.cc.s"
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/src/board.cc -o CMakeFiles/control_process.dir/board.cc.s
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/src/board.cc -o CMakeFiles/control_process.dir/board.cc.s
 
 src/CMakeFiles/control_process.dir/control_center.cpp.o: src/CMakeFiles/control_process.dir/flags.make
 src/CMakeFiles/control_process.dir/control_center.cpp.o: ../src/control_center.cpp
 src/CMakeFiles/control_process.dir/control_center.cpp.o: src/CMakeFiles/control_process.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/control_process.dir/control_center.cpp.o"
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/control_process.dir/control_center.cpp.o -MF CMakeFiles/control_process.dir/control_center.cpp.o.d -o CMakeFiles/control_process.dir/control_center.cpp.o -c /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/src/control_center.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/control_process.dir/control_center.cpp.o"
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/control_process.dir/control_center.cpp.o -MF CMakeFiles/control_process.dir/control_center.cpp.o.d -o CMakeFiles/control_process.dir/control_center.cpp.o -c /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/src/control_center.cpp
 
 src/CMakeFiles/control_process.dir/control_center.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/control_process.dir/control_center.cpp.i"
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/src/control_center.cpp > CMakeFiles/control_process.dir/control_center.cpp.i
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/src/control_center.cpp > CMakeFiles/control_process.dir/control_center.cpp.i
 
 src/CMakeFiles/control_process.dir/control_center.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/control_process.dir/control_center.cpp.s"
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/src/control_center.cpp -o CMakeFiles/control_process.dir/control_center.cpp.s
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/src/control_center.cpp -o CMakeFiles/control_process.dir/control_center.cpp.s
 
 src/CMakeFiles/control_process.dir/http.cpp.o: src/CMakeFiles/control_process.dir/flags.make
 src/CMakeFiles/control_process.dir/http.cpp.o: ../src/http.cpp
 src/CMakeFiles/control_process.dir/http.cpp.o: src/CMakeFiles/control_process.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/control_process.dir/http.cpp.o"
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/control_process.dir/http.cpp.o -MF CMakeFiles/control_process.dir/http.cpp.o.d -o CMakeFiles/control_process.dir/http.cpp.o -c /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/src/http.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/control_process.dir/http.cpp.o"
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/control_process.dir/http.cpp.o -MF CMakeFiles/control_process.dir/http.cpp.o.d -o CMakeFiles/control_process.dir/http.cpp.o -c /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/src/http.cpp
 
 src/CMakeFiles/control_process.dir/http.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/control_process.dir/http.cpp.i"
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/src/http.cpp > CMakeFiles/control_process.dir/http.cpp.i
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/src/http.cpp > CMakeFiles/control_process.dir/http.cpp.i
 
 src/CMakeFiles/control_process.dir/http.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/control_process.dir/http.cpp.s"
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/src/http.cpp -o CMakeFiles/control_process.dir/http.cpp.s
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/src/http.cpp -o CMakeFiles/control_process.dir/http.cpp.s
 
 src/CMakeFiles/control_process.dir/ipc_udp.cpp.o: src/CMakeFiles/control_process.dir/flags.make
 src/CMakeFiles/control_process.dir/ipc_udp.cpp.o: ../src/ipc_udp.cpp
 src/CMakeFiles/control_process.dir/ipc_udp.cpp.o: src/CMakeFiles/control_process.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/control_process.dir/ipc_udp.cpp.o"
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/control_process.dir/ipc_udp.cpp.o -MF CMakeFiles/control_process.dir/ipc_udp.cpp.o.d -o CMakeFiles/control_process.dir/ipc_udp.cpp.o -c /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/src/ipc_udp.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/control_process.dir/ipc_udp.cpp.o"
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/control_process.dir/ipc_udp.cpp.o -MF CMakeFiles/control_process.dir/ipc_udp.cpp.o.d -o CMakeFiles/control_process.dir/ipc_udp.cpp.o -c /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/src/ipc_udp.cpp
 
 src/CMakeFiles/control_process.dir/ipc_udp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/control_process.dir/ipc_udp.cpp.i"
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/src/ipc_udp.cpp > CMakeFiles/control_process.dir/ipc_udp.cpp.i
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/src/ipc_udp.cpp > CMakeFiles/control_process.dir/ipc_udp.cpp.i
 
 src/CMakeFiles/control_process.dir/ipc_udp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/control_process.dir/ipc_udp.cpp.s"
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/src/ipc_udp.cpp -o CMakeFiles/control_process.dir/ipc_udp.cpp.s
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/src/ipc_udp.cpp -o CMakeFiles/control_process.dir/ipc_udp.cpp.s
 
 src/CMakeFiles/control_process.dir/mcp_server.cc.o: src/CMakeFiles/control_process.dir/flags.make
 src/CMakeFiles/control_process.dir/mcp_server.cc.o: ../src/mcp_server.cc
 src/CMakeFiles/control_process.dir/mcp_server.cc.o: src/CMakeFiles/control_process.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/control_process.dir/mcp_server.cc.o"
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/control_process.dir/mcp_server.cc.o -MF CMakeFiles/control_process.dir/mcp_server.cc.o.d -o CMakeFiles/control_process.dir/mcp_server.cc.o -c /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/src/mcp_server.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/control_process.dir/mcp_server.cc.o"
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/control_process.dir/mcp_server.cc.o -MF CMakeFiles/control_process.dir/mcp_server.cc.o.d -o CMakeFiles/control_process.dir/mcp_server.cc.o -c /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/src/mcp_server.cc
 
 src/CMakeFiles/control_process.dir/mcp_server.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/control_process.dir/mcp_server.cc.i"
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/src/mcp_server.cc > CMakeFiles/control_process.dir/mcp_server.cc.i
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/src/mcp_server.cc > CMakeFiles/control_process.dir/mcp_server.cc.i
 
 src/CMakeFiles/control_process.dir/mcp_server.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/control_process.dir/mcp_server.cc.s"
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/src/mcp_server.cc -o CMakeFiles/control_process.dir/mcp_server.cc.s
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/src/mcp_server.cc -o CMakeFiles/control_process.dir/mcp_server.cc.s
 
 src/CMakeFiles/control_process.dir/uuid.cpp.o: src/CMakeFiles/control_process.dir/flags.make
 src/CMakeFiles/control_process.dir/uuid.cpp.o: ../src/uuid.cpp
 src/CMakeFiles/control_process.dir/uuid.cpp.o: src/CMakeFiles/control_process.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/control_process.dir/uuid.cpp.o"
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/control_process.dir/uuid.cpp.o -MF CMakeFiles/control_process.dir/uuid.cpp.o.d -o CMakeFiles/control_process.dir/uuid.cpp.o -c /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/src/uuid.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/control_process.dir/uuid.cpp.o"
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/control_process.dir/uuid.cpp.o -MF CMakeFiles/control_process.dir/uuid.cpp.o.d -o CMakeFiles/control_process.dir/uuid.cpp.o -c /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/src/uuid.cpp
 
 src/CMakeFiles/control_process.dir/uuid.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/control_process.dir/uuid.cpp.i"
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/src/uuid.cpp > CMakeFiles/control_process.dir/uuid.cpp.i
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/src/uuid.cpp > CMakeFiles/control_process.dir/uuid.cpp.i
 
 src/CMakeFiles/control_process.dir/uuid.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/control_process.dir/uuid.cpp.s"
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/src/uuid.cpp -o CMakeFiles/control_process.dir/uuid.cpp.s
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/src/uuid.cpp -o CMakeFiles/control_process.dir/uuid.cpp.s
 
 src/CMakeFiles/control_process.dir/websocket_client.cpp.o: src/CMakeFiles/control_process.dir/flags.make
 src/CMakeFiles/control_process.dir/websocket_client.cpp.o: ../src/websocket_client.cpp
 src/CMakeFiles/control_process.dir/websocket_client.cpp.o: src/CMakeFiles/control_process.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/control_process.dir/websocket_client.cpp.o"
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/control_process.dir/websocket_client.cpp.o -MF CMakeFiles/control_process.dir/websocket_client.cpp.o.d -o CMakeFiles/control_process.dir/websocket_client.cpp.o -c /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/src/websocket_client.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/control_process.dir/websocket_client.cpp.o"
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/control_process.dir/websocket_client.cpp.o -MF CMakeFiles/control_process.dir/websocket_client.cpp.o.d -o CMakeFiles/control_process.dir/websocket_client.cpp.o -c /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/src/websocket_client.cpp
 
 src/CMakeFiles/control_process.dir/websocket_client.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/control_process.dir/websocket_client.cpp.i"
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/src/websocket_client.cpp > CMakeFiles/control_process.dir/websocket_client.cpp.i
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/src/websocket_client.cpp > CMakeFiles/control_process.dir/websocket_client.cpp.i
 
 src/CMakeFiles/control_process.dir/websocket_client.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/control_process.dir/websocket_client.cpp.s"
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/src/websocket_client.cpp -o CMakeFiles/control_process.dir/websocket_client.cpp.s
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/src && /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/src/websocket_client.cpp -o CMakeFiles/control_process.dir/websocket_client.cpp.s
 
 # Object files for target control_process
 control_process_OBJECTS = \
@@ -207,18 +207,18 @@ bin/control_process: src/CMakeFiles/control_process.dir/build.make
 bin/control_process: ../lib/cjson_install/lib/libcjson.a
 bin/control_process: /home/lozoho/arm_libs/boost_install/lib/libboost_system.a
 bin/control_process: src/CMakeFiles/control_process.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable ../bin/control_process"
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/control_process.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable ../bin/control_process"
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/control_process.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/control_process.dir/build: bin/control_process
 .PHONY : src/CMakeFiles/control_process.dir/build
 
 src/CMakeFiles/control_process.dir/clean:
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/src && $(CMAKE_COMMAND) -P CMakeFiles/control_process.dir/cmake_clean.cmake
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/src && $(CMAKE_COMMAND) -P CMakeFiles/control_process.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/control_process.dir/clean
 
 src/CMakeFiles/control_process.dir/depend:
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/src /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/src /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/src/CMakeFiles/control_process.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/src /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/src /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/src/CMakeFiles/control_process.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/control_process.dir/depend
 

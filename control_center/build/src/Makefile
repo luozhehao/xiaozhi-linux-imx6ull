@@ -57,10 +57,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center
+CMAKE_SOURCE_DIR = /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build
+CMAKE_BINARY_DIR = /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/CMakeFiles /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/src//CMakeFiles/progress.marks
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/CMakeFiles 0
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/CMakeFiles /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/src//CMakeFiles/progress.marks
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/control_process.dir/rule:
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/control_process.dir/rule
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/control_process.dir/rule
 .PHONY : src/CMakeFiles/control_process.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ control_process: src/CMakeFiles/control_process.dir/rule
 
 # fast build rule for target.
 control_process/fast:
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/build
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/build
 .PHONY : control_process/fast
 
 board.o: board.cc.o
@@ -135,7 +135,7 @@ board.o: board.cc.o
 
 # target to build an object file
 board.cc.o:
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/board.cc.o
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/board.cc.o
 .PHONY : board.cc.o
 
 board.i: board.cc.i
@@ -143,7 +143,7 @@ board.i: board.cc.i
 
 # target to preprocess a source file
 board.cc.i:
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/board.cc.i
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/board.cc.i
 .PHONY : board.cc.i
 
 board.s: board.cc.s
@@ -151,7 +151,7 @@ board.s: board.cc.s
 
 # target to generate assembly for a file
 board.cc.s:
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/board.cc.s
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/board.cc.s
 .PHONY : board.cc.s
 
 control_center.o: control_center.cpp.o
@@ -159,7 +159,7 @@ control_center.o: control_center.cpp.o
 
 # target to build an object file
 control_center.cpp.o:
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/control_center.cpp.o
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/control_center.cpp.o
 .PHONY : control_center.cpp.o
 
 control_center.i: control_center.cpp.i
@@ -167,7 +167,7 @@ control_center.i: control_center.cpp.i
 
 # target to preprocess a source file
 control_center.cpp.i:
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/control_center.cpp.i
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/control_center.cpp.i
 .PHONY : control_center.cpp.i
 
 control_center.s: control_center.cpp.s
@@ -175,7 +175,7 @@ control_center.s: control_center.cpp.s
 
 # target to generate assembly for a file
 control_center.cpp.s:
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/control_center.cpp.s
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/control_center.cpp.s
 .PHONY : control_center.cpp.s
 
 http.o: http.cpp.o
@@ -183,7 +183,7 @@ http.o: http.cpp.o
 
 # target to build an object file
 http.cpp.o:
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/http.cpp.o
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/http.cpp.o
 .PHONY : http.cpp.o
 
 http.i: http.cpp.i
@@ -191,7 +191,7 @@ http.i: http.cpp.i
 
 # target to preprocess a source file
 http.cpp.i:
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/http.cpp.i
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/http.cpp.i
 .PHONY : http.cpp.i
 
 http.s: http.cpp.s
@@ -199,7 +199,7 @@ http.s: http.cpp.s
 
 # target to generate assembly for a file
 http.cpp.s:
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/http.cpp.s
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/http.cpp.s
 .PHONY : http.cpp.s
 
 ipc_udp.o: ipc_udp.cpp.o
@@ -207,7 +207,7 @@ ipc_udp.o: ipc_udp.cpp.o
 
 # target to build an object file
 ipc_udp.cpp.o:
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/ipc_udp.cpp.o
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/ipc_udp.cpp.o
 .PHONY : ipc_udp.cpp.o
 
 ipc_udp.i: ipc_udp.cpp.i
@@ -215,7 +215,7 @@ ipc_udp.i: ipc_udp.cpp.i
 
 # target to preprocess a source file
 ipc_udp.cpp.i:
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/ipc_udp.cpp.i
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/ipc_udp.cpp.i
 .PHONY : ipc_udp.cpp.i
 
 ipc_udp.s: ipc_udp.cpp.s
@@ -223,7 +223,7 @@ ipc_udp.s: ipc_udp.cpp.s
 
 # target to generate assembly for a file
 ipc_udp.cpp.s:
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/ipc_udp.cpp.s
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/ipc_udp.cpp.s
 .PHONY : ipc_udp.cpp.s
 
 mcp_server.o: mcp_server.cc.o
@@ -231,7 +231,7 @@ mcp_server.o: mcp_server.cc.o
 
 # target to build an object file
 mcp_server.cc.o:
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/mcp_server.cc.o
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/mcp_server.cc.o
 .PHONY : mcp_server.cc.o
 
 mcp_server.i: mcp_server.cc.i
@@ -239,7 +239,7 @@ mcp_server.i: mcp_server.cc.i
 
 # target to preprocess a source file
 mcp_server.cc.i:
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/mcp_server.cc.i
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/mcp_server.cc.i
 .PHONY : mcp_server.cc.i
 
 mcp_server.s: mcp_server.cc.s
@@ -247,7 +247,7 @@ mcp_server.s: mcp_server.cc.s
 
 # target to generate assembly for a file
 mcp_server.cc.s:
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/mcp_server.cc.s
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/mcp_server.cc.s
 .PHONY : mcp_server.cc.s
 
 media/esp32_music.o: media/esp32_music.cc.o
@@ -255,7 +255,7 @@ media/esp32_music.o: media/esp32_music.cc.o
 
 # target to build an object file
 media/esp32_music.cc.o:
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/media/esp32_music.cc.o
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/media/esp32_music.cc.o
 .PHONY : media/esp32_music.cc.o
 
 media/esp32_music.i: media/esp32_music.cc.i
@@ -263,7 +263,7 @@ media/esp32_music.i: media/esp32_music.cc.i
 
 # target to preprocess a source file
 media/esp32_music.cc.i:
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/media/esp32_music.cc.i
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/media/esp32_music.cc.i
 .PHONY : media/esp32_music.cc.i
 
 media/esp32_music.s: media/esp32_music.cc.s
@@ -271,7 +271,7 @@ media/esp32_music.s: media/esp32_music.cc.s
 
 # target to generate assembly for a file
 media/esp32_music.cc.s:
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/media/esp32_music.cc.s
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/media/esp32_music.cc.s
 .PHONY : media/esp32_music.cc.s
 
 uuid.o: uuid.cpp.o
@@ -279,7 +279,7 @@ uuid.o: uuid.cpp.o
 
 # target to build an object file
 uuid.cpp.o:
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/uuid.cpp.o
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/uuid.cpp.o
 .PHONY : uuid.cpp.o
 
 uuid.i: uuid.cpp.i
@@ -287,7 +287,7 @@ uuid.i: uuid.cpp.i
 
 # target to preprocess a source file
 uuid.cpp.i:
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/uuid.cpp.i
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/uuid.cpp.i
 .PHONY : uuid.cpp.i
 
 uuid.s: uuid.cpp.s
@@ -295,7 +295,7 @@ uuid.s: uuid.cpp.s
 
 # target to generate assembly for a file
 uuid.cpp.s:
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/uuid.cpp.s
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/uuid.cpp.s
 .PHONY : uuid.cpp.s
 
 websocket_client.o: websocket_client.cpp.o
@@ -303,7 +303,7 @@ websocket_client.o: websocket_client.cpp.o
 
 # target to build an object file
 websocket_client.cpp.o:
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/websocket_client.cpp.o
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/websocket_client.cpp.o
 .PHONY : websocket_client.cpp.o
 
 websocket_client.i: websocket_client.cpp.i
@@ -311,7 +311,7 @@ websocket_client.i: websocket_client.cpp.i
 
 # target to preprocess a source file
 websocket_client.cpp.i:
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/websocket_client.cpp.i
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/websocket_client.cpp.i
 .PHONY : websocket_client.cpp.i
 
 websocket_client.s: websocket_client.cpp.s
@@ -319,7 +319,7 @@ websocket_client.s: websocket_client.cpp.s
 
 # target to generate assembly for a file
 websocket_client.cpp.s:
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/websocket_client.cpp.s
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/websocket_client.cpp.s
 .PHONY : websocket_client.cpp.s
 
 # Help Target
@@ -366,6 +366,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

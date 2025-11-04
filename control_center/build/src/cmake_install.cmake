@@ -1,4 +1,4 @@
-# Install script for directory: /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/src
+# Install script for directory: /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

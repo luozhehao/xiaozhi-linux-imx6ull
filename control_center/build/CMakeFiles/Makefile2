@@ -54,10 +54,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center
+CMAKE_SOURCE_DIR = /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build
+CMAKE_BINARY_DIR = /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -96,14 +96,14 @@ src/clean: src/CMakeFiles/control_process.dir/clean
 src/CMakeFiles/control_process.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/control_process.dir/build.make src/CMakeFiles/control_process.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target control_process"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target control_process"
 .PHONY : src/CMakeFiles/control_process.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/control_process.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/control_process.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/control_process.dir/rule
 
 # Convenience name for target.

@@ -1,5 +1,5 @@
 src/CMakeFiles/control_process.dir/uuid.cpp.o: \
- /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/src/uuid.cpp \
+ /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/src/uuid.cpp \
  /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/stdc-predef.h \
  /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/include/c++/7.5.0/iostream \
  /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/include/c++/7.5.0/arm-linux-gnueabihf/bits/c++config.h \
@@ -213,7 +213,7 @@ src/CMakeFiles/control_process.dir/uuid.cpp.o: \
  /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/include/c++/7.5.0/array \
  /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/include/c++/7.5.0/bits/uses_allocator.h \
  /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/include/c++/7.5.0/bits/invoke.h \
- /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/src/json.hpp \
+ /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/src/json.hpp \
  /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/include/c++/7.5.0/cstddef \
  /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/include/c++/7.5.0/functional \
  /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/include/c++/7.5.0/bits/std_function.h \

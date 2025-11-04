@@ -1,7 +1,7 @@
 src/CMakeFiles/control_process.dir/board.cc.o: \
- /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/src/board.cc \
+ /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/src/board.cc \
  /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/stdc-predef.h \
- /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/src/board.h \
+ /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/src/board.h \
  /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/include/c++/7.5.0/cstring \
  /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/include/c++/7.5.0/arm-linux-gnueabihf/bits/c++config.h \
  /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/include/c++/7.5.0/arm-linux-gnueabihf/bits/os_defines.h \
@@ -192,9 +192,9 @@ src/CMakeFiles/control_process.dir/board.cc.o: \
  /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/include/c++/7.5.0/bits/ostream.tcc \
  /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/include/c++/7.5.0/istream \
  /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/include/c++/7.5.0/bits/istream.tcc \
- /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/lib/cjson_install/include/cjson/cJSON.h \
- /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/src/media/volume_alsa.h \
- /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/lib/alsa-lib-share/include/alsa/asoundlib.h \
+ /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/lib/cjson_install/include/cjson/cJSON.h \
+ /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/src/media/volume_alsa.h \
+ /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/lib/alsa-lib-share/include/alsa/asoundlib.h \
  /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/unistd.h \
  /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/posix_opt.h \
  /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/environments.h \
@@ -211,21 +211,21 @@ src/CMakeFiles/control_process.dir/board.cc.o: \
  /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/poll.h \
  /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/sys/poll.h \
  /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/bits/poll.h \
- /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/lib/alsa-lib-share/include/alsa/asoundef.h \
- /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/lib/alsa-lib-share/include/alsa/version.h \
- /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/lib/alsa-lib-share/include/alsa/global.h \
- /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/lib/alsa-lib-share/include/alsa/input.h \
- /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/lib/alsa-lib-share/include/alsa/output.h \
- /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/lib/alsa-lib-share/include/alsa/error.h \
- /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/lib/alsa-lib-share/include/alsa/conf.h \
- /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/lib/alsa-lib-share/include/alsa/pcm.h \
- /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/lib/alsa-lib-share/include/alsa/rawmidi.h \
- /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/lib/alsa-lib-share/include/alsa/timer.h \
- /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/lib/alsa-lib-share/include/alsa/hwdep.h \
- /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/lib/alsa-lib-share/include/alsa/control.h \
- /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/lib/alsa-lib-share/include/alsa/mixer.h \
- /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/lib/alsa-lib-share/include/alsa/seq_event.h \
- /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/lib/alsa-lib-share/include/alsa/seq.h \
- /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/lib/alsa-lib-share/include/alsa/seqmid.h \
- /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/lib/alsa-lib-share/include/alsa/seq_midi_event.h \
- /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/src/media/music.h
+ /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/lib/alsa-lib-share/include/alsa/asoundef.h \
+ /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/lib/alsa-lib-share/include/alsa/version.h \
+ /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/lib/alsa-lib-share/include/alsa/global.h \
+ /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/lib/alsa-lib-share/include/alsa/input.h \
+ /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/lib/alsa-lib-share/include/alsa/output.h \
+ /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/lib/alsa-lib-share/include/alsa/error.h \
+ /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/lib/alsa-lib-share/include/alsa/conf.h \
+ /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/lib/alsa-lib-share/include/alsa/pcm.h \
+ /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/lib/alsa-lib-share/include/alsa/rawmidi.h \
+ /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/lib/alsa-lib-share/include/alsa/timer.h \
+ /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/lib/alsa-lib-share/include/alsa/hwdep.h \
+ /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/lib/alsa-lib-share/include/alsa/control.h \
+ /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/lib/alsa-lib-share/include/alsa/mixer.h \
+ /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/lib/alsa-lib-share/include/alsa/seq_event.h \
+ /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/lib/alsa-lib-share/include/alsa/seq.h \
+ /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/lib/alsa-lib-share/include/alsa/seqmid.h \
+ /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/lib/alsa-lib-share/include/alsa/seq_midi_event.h \
+ /home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull-bak20251104/control_center/src/media/music.h
