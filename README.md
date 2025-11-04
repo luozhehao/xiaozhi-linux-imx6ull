@@ -18,4 +18,22 @@
 
 gui与sound_app程序使用的编译工具是gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf。
 
-control_center使用gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabihf。
+control_center使用gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf。
+
+
+
+
+
+
+#### 已经实现的功能
+
+1.可以连接xianzhi.me服务器，并且完成基本的对话。
+
+2.基本实现MCP服务，只能调节音量，还需添加更多工具，包括音乐播放。
+
+
+
+#### 存在的问题
+
+不能播放很多的歌曲，可能是没有实现MCP服务器。
+

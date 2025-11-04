@@ -107,7 +107,7 @@ int init_opus_decoder(int inputSampleRate, int inputChannels, int duration_ms,
     g_opus_decoder.outputChannels = outputChannels;
 
     int resampleErr;
-    g_opus_decoder.resampler = speex_resampler_init(
+    g_opus_decoder.resampler = speex_resampler_init(     //speex_resampler_process_int
         g_opus_decoder.inputChannels,
         g_opus_decoder.inputSampleRate,
         g_opus_decoder.outputSampleRate,
@@ -130,6 +130,7 @@ int init_opus_decoder(int inputSampleRate, int inputChannels, int duration_ms,
     g_opus_decoder.decoder = decoder;
     return 0;
 }
+
 
 int pcm2opus(unsigned char* pcmdata, int pcmsize, unsigned char* opusdata, int* opussize) {
     // 使用全局配置结构体中的参数
@@ -254,26 +255,40 @@ int pcm2opus(unsigned char* pcmdata, int pcmsize, unsigned char* opusdata, int* 
     return frameCount * targetFrameSize;
 }
 
+int opus2pcm_cnt = 0;
+
 int opus2pcm(unsigned char* opusdata, int opussize, unsigned char* pcmdata, int *pcmsize) {
     // 计算最大可能的 PCM 数据大小
     int maxFrameSize = 480; // Opus 最大帧大小为 120 ms，假设 48 kHz 采样率
     int maxPcmSize = maxFrameSize * g_opus_decoder.inputChannels * sizeof(opus_int16);
+    //   maxPcmSize = 480 * 1 *2 = 960
     std::vector<opus_int16> pcmFrame(maxPcmSize);
 
-    // 计算目标 PCM 数据大小
+    // 计算目标 PCM 数据大小  targetFrameSize = 16000 * 60 /1000 = 960
+    //                       targetPcmSize = 960 * 2 * 2 = 3840
     int targetFrameSize = g_opus_decoder.outputSampleRate * g_opus_decoder.duration_ms / 1000;
     int targetPcmSize = targetFrameSize * g_opus_decoder.outputChannels * sizeof(opus_int16);
     std::vector<opus_int16> resampledFrame(targetPcmSize);
+
+    // printf("### opus2pcm, maxPcmSize = %d, targetFrameSize = %d, targetPcmSize = %d\n", maxPcmSize, targetFrameSize, targetPcmSize);
+    // printf("### opus2pcm, opussize = %d\n", opussize);    //  80~90  Bytes // 480Byte
 
     // 逐帧解码
     int totalBytesRead = 0;
     int totalPcmBytes = 0;
     while (totalBytesRead < opussize) {
-        // 计算当前帧的大小
+        opus2pcm_cnt++;
+        printf("totalBytesRead = %d, opussize = %d, opus2pcm_cnt=%d\n", totalBytesRead, opussize, opus2pcm_cnt);
+        // 计算当前帧的大小                                               480*2*1                                            85-0
         size_t frameSize = std::min(static_cast<size_t>(maxFrameSize * sizeof(opus_int16) * g_opus_decoder.inputChannels), static_cast<size_t>(opussize - totalBytesRead));
 
         // 解码 Opus 帧
-        int decodedSamples = opus_decode(g_opus_decoder.decoder, opusdata + totalBytesRead, frameSize, pcmFrame.data(), maxPcmSize, 0);
+        int decodedSamples = opus_decode(   g_opus_decoder.decoder, 
+                                            opusdata + totalBytesRead, 
+                                            frameSize, 
+                                            pcmFrame.data(), 
+                                            maxPcmSize, 
+                                            0);
         if (decodedSamples < 0) {
             std::cerr << "帧 " << totalBytesRead / frameSize + 1 << " 解码失败: " << opus_strerror(decodedSamples) << std::endl;
             return -1;
@@ -293,6 +308,7 @@ int opus2pcm(unsigned char* opusdata, int opussize, unsigned char* pcmdata, int 
             resampledFrame.data(),
             &out_len
         );
+        printf("$$$ opus2pcm, decodedSamples = %d, resampledFrame.size() = %d\n", decodedSamples, resampledFrame.size());
 
         if (resampleErr != RESAMPLER_ERR_SUCCESS) {
             std::cerr << "重采样失败: " << resampleErr << std::endl;
@@ -330,7 +346,7 @@ int opus2pcm(unsigned char* opusdata, int opussize, unsigned char* pcmdata, int 
             }
         }
 
-        // 计算最终 PCM 数据大小
+        // 计算最终 PCM 数据大小  960 * 2 * 2
         int finalPcmBytes = targetFrameSize * g_opus_decoder.outputChannels * sizeof(opus_int16);
 
         // 检查 PCM 数据缓冲区是否足够

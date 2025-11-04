@@ -137,9 +137,9 @@ lvgl/freetype2/clean: lvgl/freetype2/CMakeFiles/freetype.dir/clean
 # Target rules for target CMakeFiles/main.dir
 
 # All Build rule for target.
-CMakeFiles/main.dir/all: lvgl/CMakeFiles/lvgl.dir/all
-CMakeFiles/main.dir/all: lv_100ask_xz_ai/CMakeFiles/lv_100ask_xz_ai.dir/all
 CMakeFiles/main.dir/all: lvgl/CMakeFiles/lvgl_thorvg.dir/all
+CMakeFiles/main.dir/all: lv_100ask_xz_ai/CMakeFiles/lv_100ask_xz_ai.dir/all
+CMakeFiles/main.dir/all: lvgl/CMakeFiles/lvgl.dir/all
 CMakeFiles/main.dir/all: lvgl/CMakeFiles/lvgl_examples.dir/all
 CMakeFiles/main.dir/all: lvgl/CMakeFiles/lvgl_demos.dir/all
 CMakeFiles/main.dir/all: lvgl/freetype2/CMakeFiles/freetype.dir/all

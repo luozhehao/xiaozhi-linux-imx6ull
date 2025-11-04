@@ -65,7 +65,9 @@ void get_actual_record_settings(unsigned int *sample_rate, unsigned int *channel
 }
 
 // Function to open PCM device for recording
-int open_record(const char *device, unsigned int sample_rate, unsigned int channels, snd_pcm_format_t format, unsigned int *actual_sample_rate, unsigned int *actual_channels, snd_pcm_format_t *actual_format, snd_pcm_t **pcm_handle) {
+int open_record(const char *device, unsigned int sample_rate, unsigned int channels, snd_pcm_format_t format, 
+                unsigned int *actual_sample_rate, unsigned int *actual_channels, snd_pcm_format_t *actual_format, 
+                snd_pcm_t **pcm_handle) {
     snd_pcm_hw_params_t *hw_params = NULL;
     int rc;
 
@@ -117,7 +119,6 @@ int open_record(const char *device, unsigned int sample_rate, unsigned int chann
         }
     }
     /*****************************************/
-
 
     // Apply hardware parameters
     rc = snd_pcm_hw_params(*pcm_handle, hw_params);
@@ -196,9 +197,11 @@ void* record_audio_thread(void* arg) {
     printf("  Bit Depth: %s, actual_format = %d\n", snd_pcm_format_name(actual_format), actual_format);
     printf("  Frames: %lu\n", (unsigned long)frames);
     printf("  Frame Size: %zu\n", frame_size);
-
+                    // 512 * 2 *1
+    int buf_size = frames * frame_size * actual_channels;
+    printf("  ### buf_size: %d\n", buf_size);
     // Allocate PCM data buffer
-    buffer = (unsigned char *)malloc(frames * frame_size * actual_channels);
+    buffer = (unsigned char *)malloc(buf_size);
     if (!buffer) {
         fprintf(stderr, "Memory allocation failed\n");
         snd_pcm_drain(pcm_handle);

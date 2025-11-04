@@ -1,24 +1,37 @@
-
 ######################################
+
 #source file
 #源文件，自动找所有.c和.cpp文件，并将目标定义为同名.o文件
-SOURCE  := $(wildcard *.c) $(wildcard *.cpp)
-OBJS    := $(patsubst %.c,%.o,$(patsubst %.cpp,%.o,$(SOURCE)))
-  
+# SOURCE  := $(wildcard *.c) $(wildcard *.cpp)
+# OBJS    := $(patsubst %.c,%.o,$(patsubst %.cpp,%.o,$(SOURCE)))
+
+
 #target you can change test to what you want
 #目标文件名，输入任意你想要的执行文件名
-TARGET  := control_center
-
+# 定义输出目录变量
+# 目录设置
+# SRC_DIR = src
+SRC_DIR = ./
+BUILD_DIR = build
+TARGET  := $(BUILD_DIR)/control_center
 PROJECT_ROOT_DIR := $(shell pwd)
+# ###############
+# # 自动查找源文件
+C_SRCS = $(wildcard $(SRC_DIR)/*.c)
+CPP_SRCS = $(wildcard $(SRC_DIR)/*.cpp)
+OBJS = $(C_SRCS:$(SRC_DIR)/%.c= $(BUILD_DIR)/%.o) \
+       $(CPP_SRCS:$(SRC_DIR)/%.cpp= $(BUILD_DIR)/%.o)
 
-###############
+SRCS =  C_SRCS
+SRCS += CPP_SRCS
 
 ###############
 
 #compile and lib parameter
 #编译参数 特别
-# CROSS_COMPILE := arm-linux-gnueabihf-
-CROSS_COMPILE := /usr/local/arm/gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-
+CROSS_COMPILE := /usr/local/arm/gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-
+#   /usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-gcc
+# CROSS_COMPILE := /usr/local/arm/gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-
 # CROSS_COMPILE := arm-poky-linux-gnueabi-
 CC      := $(CROSS_COMPILE)gcc
 # CC      := "arm-poky-linux-gnueabi-gcc  -march=armv7ve -mfpu=neon  -mfloat-abi=hard -mcpu=cortex-a7 \
@@ -31,7 +44,8 @@ LDFLAGS := -lssl -lcrypto -lpthread -lcurl -g
 # LDFLAGS += -lxcb -lxcb-shm -lxcb-shape -lxcb-xfixes -lasound -lSDL2 -lsndio
 DEFINES :=
 # INCLUDE := -I.
-CFLAGS  := -g -Wall -O2 -DSOCKLEN_T=socklen_t -D_LARGEFILE_SOURCE=1 -D_FILE_OFFSET_BITS=64 $(DEFINES) -std=c++11 -std=gnu++11 #$(INCLUDE)
+CFLAGS  := -g -Wall -O2 -DSOCKLEN_T=socklen_t -D_LARGEFILE_SOURCE=1 -D_FILE_OFFSET_BITS=64 $(DEFINES)  -std=c++11 -std=gnu++11 #$(INCLUDE)
+CFLAGS  += -static-libstdc++ -static-libgcc   #  添加静态库
 CXXFLAGS:= $(CFLAGS) -DHAVE_CONFIG_H  #-static
 
 #############################
@@ -47,14 +61,6 @@ CPPFLAGS += -I"/home/lozoho/arm_libs/websocketpp_inc"
 CPPFLAGS += -I"/home/lozoho/arm_libs/boost_install/include"
 #CPPFLAGS += -I"/home/lozoho/ai_space/atom_sound/websocketpp"
 
-# CPPFLAGS += -I"./include/live555/usageEnvironment"
-# CPPFLAGS += -I"./include/live555/groupsock"
-# CPPFLAGS += -I"./include/live555/liveMedia"
-# CPPFLAGS += -I"./include/live555/basicUsageEnvironment"
-# CPPFLAGS += -I"./include/x264"
-# CPPFLAGS += -I"./include/encoder"
-
-
 ######################
 INCLUDES 	 =  -I./
 # -I/opt/fsl-imx-x11/4.1.15-2.1.0/sysroots/cortexa7hf-neon-poky-linux-gnueabi/usr/include\
@@ -62,20 +68,8 @@ INCLUDES 	 =  -I./
 
 CPPFLAGS += $(INCLUDES)
 
-# LIVE555_LIBS =  ./lib/livelib/libliveMedia.a ./lib/livelib/libgroupsock.a \
-# 				./lib/livelib/libBasicUsageEnvironment.a ./lib/livelib/libUsageEnvironment.a
-# X264_LIBS 	 =  ./lib/x264lib/libx264.a ./lib/x264lib/libx264.so.148
-# LIBS         +=  $(LIVE555_LIBS) $(X264_LIBS)
-
-# LIBS += -L"$(PROJECT_ROOT_DIR)/lib/libffmpeg/lib" -lavdevice -lavformat -lavfilter -lavcodec -lswresample -lswscale -lavutil 
-
 ######################
 # 静态链接库
-
-# LIBS += -L"/home/lozoho/ai_space/atom_sound/alsa-lib-share/lib" -lasound
-# LIBS += -L"/home/lozoho/ai_space/atom_sound/opus_arm_install/lib" -lopus
-# LIBS += -L"/home/lozoho/ai_space/atom_sound/speexdsp_arm_install/lib" -lspeexdsp
-
 LIBS += /home/lozoho/arm_libs/boost_install/lib/libboost_system.a
 LIBS += -L"/home/lozoho/arm_libs/openssl_install/lib" -lssl -lcrypto
 LIBS += -L"/home/lozoho/arm_libs/curl_install/lib"  -lcurl
@@ -89,6 +83,24 @@ LIBS += -L"/home/lozoho/arm_libs/curl_install/lib"  -lcurl
 everything : $(TARGET)
   
 all : $(TARGET)
+
+# C 源文件编译规则
+# $(BUILD_DIR)/%.o: $(SRC_DIR)/%.c
+$(BUILD_DIR)/%.o: $(SRC_DIR)/%.c
+	@echo "编译: $< -> $@"
+	@mkdir -p $(@D)
+	$(CC) $(CFLAGS) $(CPPFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) $(CPPFLAGS) -MM -MP -MT $@ -MF $*.d $<
+
+# C++ 源文件编译规则（如果需要）
+$(BUILD_DIR)/%.o: $(SRC_DIR)/%.cpp
+	@echo "编译: $< -> $@"
+	@mkdir -p $(@D)
+	$(CXX) $(CXXFLAGS) $(CPPFLAGS) -c $< -o $@
+	$(CXX) $(CXXFLAGS) $(CPPFLAGS) -MM -MP -MT $@ -MF $*.d $<
+
+
+
   
 objs : $(OBJS)
   
@@ -96,12 +108,21 @@ rebuild: veryclean everything
                 
 clean :
 	rm -fr *.so
+	rm -fr $(BUILD_DIR)/*.so
 	rm -fr *.o
+	rm -fr $(BUILD_DIR)/*.o
+	rm -fr *.d
+	rm -fr $(BUILD_DIR)/*.d
+
+
     
 veryclean : clean
 	rm -fr $(TARGET)
 
 $(TARGET) : $(OBJS)
+	@mkdir -p $(@D)
 	$(CXX)  $(CXXFLAGS)  $(CPPFLAGS) -o $@ $(OBJS)  $(LIBS) $(LDFLAGS)
 	echo "Done!"
 	echo "$(TARGET) has been built!"
+
+

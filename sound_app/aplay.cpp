@@ -29,6 +29,8 @@
 #include <stdlib.h>
 #include <alsa/asoundlib.h>
 #include <pthread.h>
+#include <iostream>
+#include <chrono>
 
 #include "aplay.h"
 
@@ -65,7 +67,7 @@ int open_play(const char *device, unsigned int sample_rate, unsigned int channel
     snd_pcm_hw_params_t *hw_params = NULL;
     int rc;
 
-    // Open PCM device for recording
+    // Open PCM device for recording      SND_PCM_STREAM_PLAYBACK
     rc = snd_pcm_open(pcm_handle, device, SND_PCM_STREAM_PLAYBACK, 0);
     if (rc < 0) {
         fprintf(stderr, "Failed to open PCM device: %s\n", snd_strerror(rc));
@@ -98,17 +100,20 @@ int open_play(const char *device, unsigned int sample_rate, unsigned int channel
     }
 
     // Retrieve and display audio parameters
-    snd_pcm_uframes_t frames;
+    snd_pcm_uframes_t frames, buf_size;
     snd_pcm_hw_params_get_period_size(hw_params, &frames, 0);
     snd_pcm_hw_params_get_rate(hw_params, &sample_rate, 0);
     snd_pcm_hw_params_get_channels(hw_params, &channels);
     snd_pcm_hw_params_get_format(hw_params, &format);
+    snd_pcm_hw_params_get_buffer_size(hw_params, &buf_size);
 
     // Set output parameters
     if (actual_sample_rate) *actual_sample_rate = sample_rate;
     if (actual_channels) *actual_channels = channels;
     if (actual_format) *actual_format = format;
 
+    printf("### open_play, frames = %d, actual_sample_rate = %d, actual_channels = %d, format = %d\n", frames, sample_rate, channels, format);
+    printf("### open_play, buf_size = %d\n\n", buf_size);
     return 0;
 }
 
@@ -159,8 +164,10 @@ void* play_audio_thread(void* arg) {
     printf("  Frames: %lu\n", (unsigned long)frames);
     printf("  Frame Size: %zu\n", frame_size);
 
-    // Allocate PCM data buffer
+    // Allocate PCM data buffer        640 *   2  *  2
     buffer = (unsigned char *)malloc(frames * frame_size * actual_channels);
+    int buf_ByteSize = frames * frame_size * actual_channels;
+    printf("### buf_ByteSize: %zu\n", buf_ByteSize);
     if (!buffer) {
         fprintf(stderr, "Memory allocation failed\n");
         snd_pcm_drain(pcm_handle);
@@ -168,18 +175,28 @@ void* play_audio_thread(void* arg) {
         return NULL;
     }
 
+    int loop_cnt = 0, err_cnt = 0;
     // playing loop
     printf("Playing started...\n");
     while (1) {
         if (g_callback)
         {
+            loop_cnt++;
+            printf("$$$ play_loop, loop_cnt = %d\n", loop_cnt); 
+            //640 * 2 *2 = 2560    
             int read_size = g_callback(buffer, frames * frame_size * actual_channels);
             if (read_size <= 0) 
                 continue;  // Stop playback when no more data
-            int frame_get = read_size / frame_size / actual_channels;
-            //printf("to write frames: %d\n", frame_get);
+            int frame_get = read_size / frame_size / actual_channels;   //640
+            auto t1 = std::chrono::steady_clock::now();
             int err = snd_pcm_writei(pcm_handle, buffer, frame_get);
+            auto t2 = std::chrono::steady_clock::now();
+            auto dt = std::chrono::duration_cast<std::chrono::milliseconds>(t2 - t1).count();
+            std::cout << "[PLAY] writei took " << dt << " ms, wrote " << err << " frames\n" << std::endl;
+            // printf("$$$ writei, frame_get = %d,err = %d\n", frame_get, err);
             if (err < 0) {
+                err_cnt++;
+                printf("$$$ play_loop, err_cnt = %d\n", err_cnt); 
                 fprintf(stderr, "Playback error: %s\n", snd_strerror(err));
                 snd_pcm_prepare(pcm_handle);
             }

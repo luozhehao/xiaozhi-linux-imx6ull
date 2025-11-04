@@ -22,7 +22,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../lvgl/lv_version.h.in"
   "../lvgl/lvgl.pc.in"
   "../lvgl/tests/FindLibDRM.cmake"
-  "../toolchain.cmake"
   "/usr/local/share/cmake-3.22/Modules/BasicConfigVersion-SameMajorVersion.cmake.in"
   "/usr/local/share/cmake-3.22/Modules/CMakeASMCompiler.cmake.in"
   "/usr/local/share/cmake-3.22/Modules/CMakeASMInformation.cmake"

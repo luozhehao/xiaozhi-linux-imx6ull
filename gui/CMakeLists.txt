@@ -1,4 +1,14 @@
 cmake_minimum_required(VERSION 3.10)
+
+
+set(CMAKE_SYSTEM_NAME Linux)
+set(CMAKE_SYSTEM_PROCESSOR arm)
+
+set(tools "/usr/local/arm/gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf")
+set(CMAKE_C_COMPILER ${tools}/bin/arm-linux-gnueabihf-gcc)
+set(CMAKE_CXX_COMPILER ${tools}/bin/arm-linux-gnueabihf-g++)
+
+
 project(lvgl)
 
 set(CMAKE_C_STANDARD 99)#C99 # lvgl officially support C99 and above
@@ -9,8 +19,8 @@ set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 
 add_subdirectory(lv_100ask_xz_ai)
 add_subdirectory(lvgl)
-target_include_directories(lvgl PUBLIC ${PROJECT_SOURCE_DIR})
 
+target_include_directories(lvgl PUBLIC ${PROJECT_SOURCE_DIR})
 target_include_directories(lvgl PUBLIC ${PROJECT_SOURCE_DIR})
 
 #add_subdirectory(lv_100ask_xz_ai)

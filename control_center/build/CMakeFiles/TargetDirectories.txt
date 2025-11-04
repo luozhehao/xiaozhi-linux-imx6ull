@@ -1,0 +1,5 @@
+/home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/CMakeFiles/edit_cache.dir
+/home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/CMakeFiles/rebuild_cache.dir
+/home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/src/CMakeFiles/control_process.dir
+/home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/src/CMakeFiles/edit_cache.dir
+/home/lozoho/ai_space/xiaozhi_ai/xiaozhi-linux-imx6ull/control_center/build/src/CMakeFiles/rebuild_cache.dir

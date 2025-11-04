@@ -127,7 +127,7 @@ p_ipc_endpoint_t ipc_endpoint_create_udp(int port_local, int port_remote, transf
         if (pendpoint)free(pendpoint);
         if (pudpdata)free(pudpdata);
         return NULL;            
-}
+    }
 
     pudpdata->socket_recv = fd_recv;
 
@@ -140,7 +140,7 @@ p_ipc_endpoint_t ipc_endpoint_create_udp(int port_local, int port_remote, transf
         if (pendpoint)free(pendpoint);
         if (pudpdata)free(pudpdata);
         return NULL;            
-}
+    }
 
     // 绑定套接字
     if (bind(fd_recv, (struct sockaddr *)&local_addr, sizeof(local_addr)) < 0) {
@@ -149,7 +149,7 @@ p_ipc_endpoint_t ipc_endpoint_create_udp(int port_local, int port_remote, transf
         if (pendpoint)free(pendpoint);
         if (pudpdata)free(pudpdata);
         return NULL;            
-}
+    }
 
     // 如果有回调函数，创建线程处理UDP连接
     if (cb) {

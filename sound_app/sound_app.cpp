@@ -132,7 +132,10 @@ void record_callback(unsigned char *buffer, size_t size, void *user_data) {
     }
 }
 
+
+
 // Callback function for playing
+static int play_cb_cnt = 0;
 int play_get_data_callback(unsigned char *buffer, size_t size) {
     static int play_buffer_offset = 0;
 
@@ -145,21 +148,31 @@ int play_get_data_callback(unsigned char *buffer, size_t size) {
         snd_pcm_format_t outputFormat;
     
         get_actual_play_settings(&outputSampleRate, &outputChannels, &outputFormat);
+        printf("$$$ play_callback, outputSampleRate = %d, outputChannels= %d, outputFormat =%d\n", outputSampleRate, outputChannels, outputFormat); 
         init_opus_decoder(16000, 1, 60, outputSampleRate, outputChannels);
 
         init = 1;
     }
     
+            // size = 2560
     // 如果 g_play_buffer 中没有足够的数据，则从 WebSocket 客户端接收数据并解码
+    static int cnt = 0;
     while (play_buffer_offset < size) {
         int opus_data_size = 0;
         int pcm_data_size = 0;
+
+        play_cb_cnt++;
+        printf("$$$ play_callback, play_cb_cnt = %d\n", play_cb_cnt);  
         //std::cout << "play_get_data_callback ************************************** "<<std::endl;
         // 从使用UDP接收数据
+
         if (g_ipc_ep->recv(g_ipc_ep, g_opus_play_buffer, OPUS_BUF_SIZE, &opus_data_size) != 0) {
             fprintf(stderr, "Failed to receive data from WebSocket client\n");
             return 0; // 返回0表示没有数据可用
         }
+        cnt++;
+        // printf("### play_callback, cnt = %d, size = %d, play_buffer_offset = %d\n", cnt, size, play_buffer_offset); 
+        printf("### play_callback, opus_data_size = %d\n", opus_data_size);   //80~90
 
 #if 0
         static int file_number = 1;
@@ -194,11 +207,15 @@ int play_get_data_callback(unsigned char *buffer, size_t size) {
         }
 
         // 更新 g_play_buffer 的偏移量
-        play_buffer_offset += pcm_data_size;
+        play_buffer_offset += pcm_data_size;   // pcm_data_size = 3840  play_buffer_offset = 3840
+        // printf("### play_callback, $$$ pcm_data_size =  %d, play_buffer_offset = %d\n", pcm_data_size, play_buffer_offset);
     }
 
     // 复制数据到 buffer
-    memcpy(buffer, g_play_buffer, size);
+    memcpy(buffer, g_play_buffer, size); 
+    //此刻，第一次循环后 ，g_play_buffer有3840Bytes数据，但是buffer 只需要2560Bytes，先把2560Bytes数据拷贝到buffer后，再把后面的（3840-2560）=1280Bytes数据往前移动 2560位置。
+    //后面的数据，还想存入g_play_buffer，需要偏移1280进行存储。
+    //播放设备的周期是640帧，而opus解码后的数据是960帧，明显过大。
     memmove(g_play_buffer, g_play_buffer+size, play_buffer_offset - size);
     play_buffer_offset -= size;    
 
@@ -237,9 +254,9 @@ int main() {
     int record_thread_status;
     int play_thread_status;
 
-    if (pthread_join(record_thread, (void**)&record_thread_status) != 0) {
-        fprintf(stderr, "Failed to join recording thread\n");
-    }
+    // if (pthread_join(record_thread, (void**)&record_thread_status) != 0) {
+    //     fprintf(stderr, "Failed to join recording thread\n");
+    // }
 
     if (pthread_join(play_thread, (void**)&play_thread_status) != 0) {
         fprintf(stderr, "Failed to join playing thread\n");
