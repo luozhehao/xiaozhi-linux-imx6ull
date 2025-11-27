@@ -1,2 +1,0 @@
-/usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-ar qc libgui_main.a CMakeFiles/gui_main.dir/src/cJSON.c.o CMakeFiles/gui_main.dir/src/ipc_udp.cpp.o CMakeFiles/gui_main.dir/src/lcd_display.cpp.o CMakeFiles/gui_main.dir/src/ui_system.cpp.o
-/usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-ranlib libgui_main.a
