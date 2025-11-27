@@ -22,7 +22,7 @@ control_center使用gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf。
 
 
 
-v2.0.0更新后，把三个app集合成一个可执行文件。编译工具是gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf。
+v1.2.0更新后，把三个app重新编程，集合成一个可执行文件。编译工具是gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf。
 
 
 
