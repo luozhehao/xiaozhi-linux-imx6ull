@@ -1,0 +1,122 @@
+
+
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include <memory>
+#include <mutex>
+#include <iomanip>
+#include <chrono>
+
+enum class LogLevel {
+    INFO,
+    WARNING,
+    ERROR
+};
+
+class Logger {
+private:
+    std::ostream* outputStream;
+    std::unique_ptr<std::ofstream> fileStream;
+    std::mutex logMutex;
+    bool useFile;
+
+    // 获取当前时间字符串
+    std::string getCurrentTime() {
+        auto now = std::chrono::system_clock::now();
+        auto time_t = std::chrono::system_clock::to_time_t(now);
+        auto ms = std::chrono::duration_cast<std::chrono::milliseconds>(
+            now.time_since_epoch()) % 1000;
+        
+        std::stringstream ss;
+        ss << std::put_time(std::localtime(&time_t), "%Y-%m-%d %H:%M:%S");
+        ss << "." << std::setfill('0') << std::setw(3) << ms.count();
+        return ss.str();
+    }
+
+    // 获取日志级别字符串
+    std::string getLevelString(LogLevel level) {
+        switch(level) {
+            case LogLevel::INFO: return "INFO";
+            case LogLevel::WARNING: return "WARNING";
+            case LogLevel::ERROR: return "ERROR";
+            default: return "UNKNOWN";
+        }
+    }
+
+    // 核心日志写入方法
+    void writeLog(LogLevel level, const std::string& message) {
+        std::lock_guard<std::mutex> lock(logMutex);
+        
+        std::stringstream logEntry;
+        logEntry << "[" << getCurrentTime() << "] "
+                 << "[" << getLevelString(level) << "] "
+                 << message << std::endl;
+        
+        *outputStream << logEntry.str();
+        outputStream->flush();
+    }
+
+public:
+    // 构造函数：无参数输出到终端，有文件名参数输出到文件
+    Logger(const std::string& filename = "") {
+        if (!filename.empty()) {
+            fileStream = std::make_unique<std::ofstream>(
+                filename, std::ios::out | std::ios::app);
+            if (fileStream->is_open()) {
+                outputStream = fileStream.get();
+                useFile = true;
+            } else {
+                // 文件打开失败，回退到终端输出
+                outputStream = &std::cout;
+                useFile = false;
+                std::cerr << "Failed to open log file, defaulting to console" << std::endl;
+            }
+        } else {
+            outputStream = &std::cout;
+            useFile = false;
+        }
+
+        
+    }
+
+    ~Logger() {
+        if (useFile && fileStream) {
+            fileStream->close();
+        }
+    }
+
+    // 禁止拷贝
+    Logger(const Logger&) = delete;
+    Logger& operator=(const Logger&) = delete;
+
+    // 日志接口方法
+    void info(const std::string& message) {
+        writeLog(LogLevel::INFO, message);
+    }
+
+    void warning(const std::string& message) {
+        writeLog(LogLevel::WARNING, message);
+    }
+
+    void error(const std::string& message) {
+        writeLog(LogLevel::ERROR, message);
+    }
+};
+
+// 使用示例
+// int logger_main() {
+//     // 输出到终端
+//     Logger consoleLogger;
+//     consoleLogger.info("Application started");
+//     consoleLogger.warning("Low memory");
+//     consoleLogger.error("File not found");
+
+//     // 输出到文件
+//     Logger fileLogger("app.log");
+//     fileLogger.info("This goes to file");
+//     fileLogger.warning("File warning");
+//     fileLogger.error("File error");
+
+//     return 0;
+// }

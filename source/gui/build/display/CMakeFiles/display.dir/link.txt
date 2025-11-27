@@ -1,0 +1,2 @@
+/usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-ar qc libdisplay.a CMakeFiles/display.dir/src/cJSON.c.o CMakeFiles/display.dir/src/ipc_udp.cpp.o CMakeFiles/display.dir/src/lcd_display.cpp.o CMakeFiles/display.dir/src/ui_system.cpp.o
+/usr/local/arm/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-ranlib libdisplay.a

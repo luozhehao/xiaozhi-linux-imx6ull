@@ -22,6 +22,10 @@ control_center使用gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf。
 
 
 
+v2.0.0更新后，把三个app集合成一个可执行文件。编译工具是gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf。
+
+
+
 
 
 
@@ -29,11 +33,13 @@ control_center使用gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf。
 
 1.可以连接xianzhi.me服务器，并且完成基本的对话。
 
-2.基本实现MCP服务，只能调节音量，还需添加更多工具，包括音乐播放。
+2.基本实现MCP服务，调节音量，包括音乐播放。
+
+3.实现UI界面为原版的微信聊天风格。
 
 
 
 #### 存在的问题
 
-不能播放很多的歌曲，可能是没有实现MCP服务器。
+MCP播放音乐后，采样率没有恢复到原有采样率。
 
